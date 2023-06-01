@@ -1,9 +1,8 @@
 import "@/styles/tailwind.css";
 import { cx } from "@/utils/all";
+import GoogleAnalyticsComp from "components/GoogleAnalyticsComp";
 import { Inter, Lora } from "next/font/google";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 import { Providers } from "./providers";
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter"
@@ -24,7 +23,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <GoogleAnalytics trackPageViews />
+      <GoogleAnalyticsComp />
       <body className="text-gray-800 antialiased dark:bg-black dark:text-gray-400">
         <Providers>{children}</Providers>
       </body>
