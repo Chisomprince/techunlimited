@@ -16,16 +16,16 @@ export default function Navbar(props) {
       href: "/"
     },
     {
+      label: "Archive",
+      href: "/archive"
+    },
+    {
       label: "About",
       href: "/about"
     },
     {
       label: "Contact",
       href: "/contact"
-    },
-    {
-      label: "Archive",
-      href: "/archive"
     }
   ];
 
@@ -57,13 +57,13 @@ export default function Navbar(props) {
             <>
               <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                  <Link href="/" className="w-40 dark:hidden">
                     {props.logo ? (
                       <Image
                         {...urlForImage(props.logo)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 840px) 100vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
@@ -71,13 +71,13 @@ export default function Navbar(props) {
                       </span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
+                  <Link href="/" className="hidden w-40 dark:block">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 840px) 100vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
