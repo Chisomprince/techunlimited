@@ -1,19 +1,17 @@
 import Container from "@/components/container";
-import { urlForImage } from "@/lib/sanity/image";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function About({ authors, settings }) {
   return (
     <Container>
-      <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+      <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
         About
       </h1>
       <div className="text-center">
         <p className="text-lg">We are a small passionate team.</p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+      {/* <div className="grid grid-cols-3 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
@@ -32,9 +30,9 @@ export default function About({ authors, settings }) {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
-      <div className="mx-auto prose text-center dark:prose-invert mt-14">
+      <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
           We provide real-time connectivity to enable software
           providers and financial institutions to build integrated

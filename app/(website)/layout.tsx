@@ -1,9 +1,9 @@
-import { getSettings } from "@/lib/sanity/client";
 import Footer from "@/components/footer";
-import { urlForImage } from "@/lib/sanity/image";
 import Navbar from "@/components/navbar";
+import { getSettings } from "@/lib/sanity/client";
+import { urlForImage } from "@/lib/sanity/image";
 
-export async function sharedMetaData(params) {
+export async function sharedMetaData() {
   const settings = await getSettings();
 
   return {
@@ -11,14 +11,22 @@ export async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "Techunlimited - Your Unlimited Source for Tech News and Insights",
+      template: "%s | Techunlimited"
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+      "Stay ahead of the technology curve with TechUnlimited, your go-to tech blog for the latest news, insightful articles, comprehensive reviews, and practical tips. Explore the limitless possibilities of the tech world with us today!",
+    keywords: [
+      "tech blog",
+      "technology news",
+      "tech insights",
+      "comprehensive reviews",
+      "practical tips",
+      "limitless possibilities",
+      "stay ahead of the curve"
+    ],
+    authors: [{ name: "chisomprince" }],
     canonical: settings?.url,
     openGraph: {
       images: [
@@ -32,7 +40,7 @@ export async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "Techunlimited",
       card: "summary_large_image"
     },
     robots: {
@@ -43,7 +51,7 @@ export async function sharedMetaData(params) {
 }
 
 export async function generateMetadata({ params }) {
-  return await sharedMetaData(params);
+  return await sharedMetaData();
 }
 
 export default async function Layout({ children, params }) {

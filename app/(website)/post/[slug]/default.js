@@ -1,13 +1,12 @@
+import Container from "@/components/container";
+import { urlForImage } from "@/lib/sanity/image";
+import { PortableText } from "@/lib/sanity/plugins/portabletext";
+import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import Container from "@/components/container";
 import { notFound } from "next/navigation";
-import { PortableText } from "@/lib/sanity/plugins/portabletext";
-import { urlForImage } from "@/lib/sanity/image";
-import { parseISO, format } from "date-fns";
 
 import CategoryLabel from "@/components/blog/category";
-import AuthorCard from "@/components/blog/authorCard";
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -40,7 +39,7 @@ export default function Post(props) {
 
           <div className="mt-3 flex justify-center space-x-3 text-gray-500 ">
             <div className="flex items-center gap-3">
-              <div className="relative h-10 w-10 flex-shrink-0">
+              {/* <div className="relative h-10 w-10 flex-shrink-0">
                 {AuthorimageProps && (
                   <Link href={`/author/${post.author.slug.current}`}>
                     <Image
@@ -52,13 +51,13 @@ export default function Post(props) {
                     />
                   </Link>
                 )}
-              </div>
+              </div> */}
               <div>
-                <p className="text-gray-800 dark:text-gray-400">
+                {/* <p className="text-gray-800 dark:text-gray-400">
                   <Link href={`/author/${post.author.slug.current}`}>
                     {post.author.name}
                   </Link>
-                </p>
+                </p> */}
                 <div className="flex items-center space-x-2 text-sm">
                   <time
                     className="text-gray-500 dark:text-gray-400"
@@ -101,7 +100,7 @@ export default function Post(props) {
               ← View all posts
             </Link>
           </div>
-          {post.author && <AuthorCard author={post.author} />}
+          {/* {post.author && <AuthorCard author={post.author} />} */}
         </article>
       </Container>
     </>
