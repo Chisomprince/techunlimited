@@ -1,10 +1,10 @@
+import CategoryLabel from "@/components/blog/category";
+import { urlForImage } from "@/lib/sanity/image";
+import { cx } from "@/utils/all";
+import { PhotoIcon } from "@heroicons/react/24/outline";
+import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import { cx } from "@/utils/all";
-import { urlForImage } from "@/lib/sanity/image";
-import { parseISO, format } from "date-fns";
-import { PhotoIcon } from "@heroicons/react/24/outline";
-import CategoryLabel from "@/components/blog/category";
 
 export default function PostList({
   post,
@@ -115,7 +115,7 @@ export default function PostList({
             </div>
 
             <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
-              <Link
+              {/* <Link
                 href={`/author/${post.author.slug.current}`}
                 legacyBehavior>
                 <div className="flex items-center gap-3">
@@ -137,7 +137,7 @@ export default function PostList({
               </Link>
               <span className="text-xs text-gray-300 dark:text-gray-600">
                 &bull;
-              </span>
+              </span> */}
               <time
                 className="truncate text-sm"
                 dateTime={post?.publishedAt || post._createdAt}>
