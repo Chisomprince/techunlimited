@@ -17,15 +17,8 @@ export async function sharedMetaData() {
     description:
       settings?.description ||
       "Stay ahead of the technology curve with TechUnlimited, your go-to tech blog for the latest news, insightful articles, comprehensive reviews, and practical tips. Explore the limitless possibilities of the tech world with us today!",
-    keywords: [
-      "tech blog",
-      "technology news",
-      "tech insights",
-      "comprehensive reviews",
-      "practical tips",
-      "limitless possibilities",
-      "stay ahead of the curve"
-    ],
+    keywords:
+      "tech blog, technology news, tech insights, comprehensive reviews,      practical tips,      limitless possibilities,      stay ahead of the curve    ",
     authors: [{ name: "chisomprince" }],
     canonical: settings?.url,
     openGraph: {
@@ -40,6 +33,9 @@ export async function sharedMetaData() {
       ]
     },
     twitter: {
+      handle: "@techparrots",
+      site: "@techparrots",
+      cardType: "summary_large_image",
       title: settings?.title || "Techunlimited",
       card: "summary_large_image"
     },
