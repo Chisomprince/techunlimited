@@ -67,7 +67,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Techunlimited
+                        Techparrots
                       </span>
                     )}
                   </Link>
@@ -81,7 +81,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Techunlimited
+                        Techparrots
                       </span>
                     )}
                   </Link>

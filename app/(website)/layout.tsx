@@ -11,12 +11,12 @@ export async function sharedMetaData() {
     title: {
       default:
         settings?.title ||
-        "Techunlimited - Your Unlimited Source for Tech News and Insights",
-      template: "%s | Techunlimited"
+        "Techparrots - Your Unlimited Source for Tech News and Insights",
+      template: "%s | Techparrots"
     },
     description:
       settings?.description ||
-      "Stay ahead of the technology curve with TechUnlimited, your go-to tech blog for the latest news, insightful articles, comprehensive reviews, and practical tips. Explore the limitless possibilities of the tech world with us today!",
+      "Stay ahead of the technology curve with Techparrots, your go-to tech blog for the latest news, insightful articles, comprehensive reviews, and practical tips. Explore the limitless possibilities of the tech world with us today!",
     keywords:
       "tech blog, technology news, tech insights, comprehensive reviews,      practical tips,      limitless possibilities,      stay ahead of the curve    ",
     authors: [{ name: "chisomprince" }],
@@ -26,7 +26,7 @@ export async function sharedMetaData() {
         {
           url:
             urlForImage(settings?.openGraphImage)?.src ||
-            "/img/opengraph.jpg",
+            "/img/opengraph.png",
           width: 800,
           height: 600
         }
@@ -36,7 +36,7 @@ export async function sharedMetaData() {
       handle: "@techparrots",
       site: "@techparrots",
       cardType: "summary_large_image",
-      title: settings?.title || "Techunlimited",
+      title: settings?.title || "Techparrots",
       card: "summary_large_image"
     },
     robots: {

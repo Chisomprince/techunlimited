@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Techunlimited",
+  title: "Techparrots",
   description: "our Unlimited Source for Tech News and Insights"
 };
 

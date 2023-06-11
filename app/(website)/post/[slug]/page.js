@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url:
-            urlForImage(post?.mainImage)?.src || "/img/opengraph.jpg",
+            urlForImage(post?.mainImage)?.src || "/img/opengraph.png",
           width: 800,
           height: 600
         }
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
       handle: "@techparrots",
       site: "@techparrots",
       cardType: "summary_large_image",
-      title: post?.title || "Techunlimited",
+      title: post?.title || "Techparrots",
       card: "summary_large_image"
     }
   };

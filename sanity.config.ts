@@ -19,7 +19,7 @@ export default defineConfig({
   name: "default",
   title: "Techparrots Admin",
   basePath: "/studio",
-  projectId: projectId,
+  projectId: projectId as string,
   dataset: dataset,
 
   plugins: [
