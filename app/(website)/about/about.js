@@ -34,16 +34,15 @@ export default function About({ authors, settings }) {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+          Welcome to Tech Parrots! We are your trusted source for
+          simplified tech knowledge. Stay informed, engaged, and ahead
+          of the curve with our tech blog. Explore the latest updates,
+          insights, and reviews on gadgets, software, AI,
+          cybersecurity, and more. Join our community of tech
+          enthusiasts and let&apos;s dive into the world of technology
+          together!
         </p>
-        <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
-        </p>
+
         <p>
           <Link href="/contact">Get in touch</Link>
         </p>

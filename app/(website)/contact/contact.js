@@ -1,11 +1,7 @@
 "use client";
 
 import Container from "@/components/container";
-import {
-  EnvelopeIcon,
-  MapPinIcon,
-  PhoneIcon
-} from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import useWeb3Forms from "@web3forms/react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -63,10 +59,10 @@ export default function Contact({ settings }) {
           </p>
 
           <div className="mt-5">
-            <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
+            {/* <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
               <MapPinIcon className="h-4 w-4" />
               <span>1734 Sanfransico, CA 93063</span>
-            </div>
+            </div> */}
             {settings?.email && (
               <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
                 <EnvelopeIcon className="h-4 w-4" />
